@@ -1,0 +1,36 @@
+@import "modules/globalvars";
+@import "modules/normalize";
+@import "modules/fonts";
+@import "modules/mixins";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/basic";
+@import "modules/forms";
+@import "modules/buttons";
+@import "modules/social-network";
+
+@import "modules/1one";
+@import "modules/2two";
+@import "modules/3three";
+@import "modules/4four";
+@import "modules/5five";
+@import "modules/6six";
+@import "modules/7seven";
+@import "modules/8leavefeedback";
+@import "modules/9authorization";
+@import "modules/10registration";
+@import "modules/11recallpassword";
+@import "modules/12companiesList";
+
+
+body {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+div, input, form, p, h1, h2, h3, h4, h5, h6, header, footer {
+  box-sizing: border-box;
+}
+*{
+    word-wrap: break-word;
+}

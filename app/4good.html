@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
+        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+        <title>711</title>
+    </head>
+    <body>
+        <div class="global-wrapper">
+            <div id="backlayer"></div>
+            <!-- START header -->
+            <header class="main-header">
+                <div class="main-header--blue">
+                    <div class="main-header-wrapper">
+                        <div class="main-header--logo">
+                            <img src="img/white-logo.svg" alt="" class="main-header--logoIcon">
+                            <p class="main-header--description">Независимый портал о страховании</p>
+                        </div>
+                        <div class="main-header--icons">
+                            <ul class="top-navigation">
+                                <li class="item item-text">
+                                    <a class="item-link item-link--hover" href="/">Отзывы</a>
+                                </li>
+                                <li class="item item-text">
+                                    <a class="item-link item-link--hover" href="/">Новости</a>
+                                </li>
+                                <li class="item" id="header_icon_search">
+                                    <a class="item-link item-link--search item-link--border" href="/">
+                                    <img src="img/search.svg" alt="">
+                                    </a>
+                                </li>
+                                <li id="top-navigation_item_search">
+                                    <input type="search" placeholder="Поиск по сайту">
+                                    <!-- Результаты поиска -->
+                                    <div class="searchResults">
+                                        <div class="news_list_day_item clear">
+                                            <div class="news_list_search_result clear">
+                                                <div class="news_list_day_item_picture">
+                                                    <img src="img/photos1.jpg" alt="">
+                                                </div>
+                                                <div class="news_list_day_item_content">
+                                                    <div class="news_list_day_item_content_title">СК "ТРАНСНЕФТЬ" вышла из НССО</div>
+                                                    <div class="news_list_day_item_content_brief">
+                                                        В апреле портал 711 рассказывал о новой инициативе Российского союза автостраховщиков. Суть инициативы сводилась к тому, ...
+                                                    </div>
+                                                    <div class="category_date_views">
+                                                        <a href="" class="category" id="category">Имущество</a>
+                                                        <span class="date" id="date">15.12.2016</span>
+                                                        <span class="views" id="views"><img src="img/eye1.svg">416</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news_list_day_item clear">
+                                            <div class="news_list_search_result clear">
+                                                <div class="news_list_day_item_picture">
+                                                    <img src="img/photos3.jpg" alt="">
+                                                </div>
+                                                <div class="news_list_day_item_content">
+                                                    <div class="news_list_day_item_content_title">СК "ТРАНСНЕФТЬ" вышла из НССО</div>
+                                                    <div class="news_list_day_item_content_brief">
+                                                        В апреле портал 711 рассказывал о новой инициативе Российского союза автостраховщиков. Суть инициативы сводилась к тому, ...
+                                                    </div>
+                                                    <div class="category_date_views">
+                                                        <a href="" class="category" id="category">Имущество</a>
+                                                        <span class="date" id="date">15.12.2016</span>
+                                                        <span class="views" id="views"><img src="img/eye1.svg">416</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news_list_day_item clear">
+                                            <div class="news_list_search_result clear">
+                                                <div class="news_list_day_item_picture">
+                                                    <img src="img/photos2.jpg" alt="">
+                                                </div>
+                                                <div class="news_list_day_item_content">
+                                                    <div class="news_list_day_item_content_title">СК "ТРАНСНЕФТЬ" вышла из НССО</div>
+                                                    <div class="news_list_day_item_content_brief">
+                                                        В апреле портал 711 рассказывал о новой инициативе Российского союза автостраховщиков. Суть инициативы сводилась к тому, ...
+                                                    </div>
+                                                    <div class="category_date_views">
+                                                        <a href="" class="category" id="category">Имущество</a>
+                                                        <span class="date" id="date">15.12.2016</span>
+                                                        <span class="views" id="views"><img src="img/eye1.svg">416</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="searchResults_more">
+                                            <a href="" class="searchResults_more_link">
+                                            Показать еще результаты: <span class="searchResults_more_counter">154</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item item_profile_icon">
+                                    <a class="item-link item-link--border" href="/">
+                                    <img src="img/profile.svg" alt="">
+                                    </a>
+                                    <!-- </li> -->
+                                <li class="item item_burger" id="item_burger">
+                                    <a class="item-link">
+                                    <img src="img/burger.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_menu_bg" id="header_menu_bg">
+                    <div class="main-header--logo">
+                        <img src="img/white-logo.svg" alt="" class="main-header--logoIcon">
+                        <p class="main-header--description">Независимый портал о страховании</p>
+                    </div>
+                    <div class="closing_cross" id="closing_cross_header"></div>
+                    <div class="header_menu clear">
+                        <a class="header_menu_item header_menu_item_active mobile-show">
+                        Отзывы
+                        </a>
+                        <a class="header_menu_item header_menu_item_active mobile-show">
+                        Новости
+                        </a>
+                        <a class="header_menu_item header_menu_item_active">
+                            Автомобили
+                            <div class="header_arrow"></div>
+                        </a>
+                        <div class="header_menu_item_links clear header_menu_item_links1">
+                            <a href="" class="header_menu_item_links_item">Ремонт</a>
+                            <a href="" class="header_menu_item_links_item">Покупка</a>
+                            <a href="" class="header_menu_item_links_item">Консультации</a>
+                        </div>
+                        <a class="header_menu_item">
+                            Имущество
+                            <div class="header_arrow"></div>
+                        </a>
+                        <div class="header_menu_item_links clear header_menu_item_links2">
+                            <a href="" class="header_menu_item_links_item">Ремонт</a>
+                            <a href="" class="header_menu_item_links_item">Покупка</a>
+                            <a href="" class="header_menu_item_links_item">Консультации</a>
+                        </div>
+                        <a class="header_menu_item">
+                            Путешествия
+                            <div class="header_arrow"></div>
+                        </a>
+                        <div class="header_menu_item_links clear header_menu_item_links3">
+                            <a href="" class="header_menu_item_links_item">Ремонт</a>
+                            <a href="" class="header_menu_item_links_item">Покупка</a>
+                            <a href="" class="header_menu_item_links_item">Консультации</a>
+                        </div>
+                        <a class="header_menu_item">
+                            Жизнь и здоровье
+                            <div class="header_arrow"></div>
+                        </a>
+                        <div class="header_menu_item_links clear header_menu_item_links4">
+                            <a href="" class="header_menu_item_links_item">Ремонт</a>
+                            <a href="" class="header_menu_item_links_item">Покупка</a>
+                            <a href="" class="header_menu_item_links_item">Консультации</a>
+                        </div>
+                        <a class="header_menu_item">
+                            Ипотека
+                            <div class="header_arrow"></div>
+                        </a>
+                        <div class="header_menu_item_links clear header_menu_item_links5">
+                            <a href="" class="header_menu_item_links_item">Ремонт</a>
+                            <a href="" class="header_menu_item_links_item">Покупка</a>
+                            <a href="" class="header_menu_item_links_item">Консультации</a>
+                        </div>
+                        <a class="header_menu_item mobile-show">
+                            <div class="header_menu_item_login">
+                                <img clas="header_menu_item_icon" src="img/profile.svg" width="16" alt="">
+                            </div>
+                            <div class="header_menu_item_login">Войти</div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <!-- END header -->
+            <main class="content_fourth clear">
+                <div class="content_fourth_block">
+                    <section class="content_third_twoBlock content_fourth_top clearfix">
+                        <div class="content-row_gray">
+                            <a href="">
+                                <div class="content-row_gray_img">
+                                    <img src="img/computer.svg" alt="" width="170" class="src">
+                                </div>
+                                <p class="content-row_gray_title">
+                                    От чего защищает полис КАСКО
+                                    И какие бывают исключения
+                                </p>
+                            </a>
+                            <div class='info-block'>
+                                <a href="" class="category" id="category">Имущество</a>
+                                <span class="date" id="date">15.12.2016</span>
+                                <span class="views" id="views"><img src="img/eye2.png" />416</span>
+                            </div>
+                            <div class="closing_cross"></div>
+                        </div>
+                    </section>
+                    <section class="content_fourth_right_list" id="content_fourth_right_list">
+                        <a href="#1" class="content_fourth_right_list_link">
+                        <span class="content_fourth_right_list__link_number">1</span>
+                        <span class="content_fourth_right_list__link_item">Что такое ОМС?</span>
+                        </a>
+                        <a href="#2" class="content_fourth_right_list_link">
+                        <span class="content_fourth_right_list__link_number">2</span>
+                        <span class="content_fourth_right_list__link_item">Как финансируются фонды ОМС?</span>
+                        </a>
+                        <a href="#3" class="content_fourth_right_list_link">
+                        <span class="content_fourth_right_list__link_number">3</span>
+                        <span class="content_fourth_right_list__link_item">Территориальная программа ОМС?</span>
+                        </a>
+                        <a href="#4" class="content_fourth_right_list_link">
+                        <span class="content_fourth_right_list__link_number">4</span>
+                        <span class="content_fourth_right_list__link_item">Что не входит в территориальную программу ОМС?</span>
+                        </a>
+                        <a  href="#5" class="content_fourth_right_list_link">
+                        <span class="content_fourth_right_list__link_number">5</span>
+                        <span class="content_fourth_right_list__link_item">За что могут забрать деньги</span>
+                        </a>
+                        <a  href="#6" class="content_fourth_right_list_link">
+                        <span class="content_fourth_right_list__link_number">6</span>
+                        <span class="content_fourth_right_list__link_item">Куда обращаться по вопросам ОМС?</span>
+                        </a>
+                        <a  href="#7" class="content_fourth_right_list_link">
+                        <span class="content_fourth_right_list__link_number">7</span>
+                        <span class="content_fourth_right_list__link_item">Какие нужны документы для оформления ОМС?</span>
+                        </a>
+                    </section>
+                    <section class="content_fourth_right clearfix">
+
+                        <a href="" id="1" class="content_fourth_right_anchor">adasd</a>
+                        <div class="content_fourth_right_item shadow">
+                            <p class="content_fourth_right_item_number">1</p>
+                            <p class="content_fourth_right_item_title">Что такое ОМС?</p>
+                            <p class="content_fourth_right_item_about">ОМС - это вид обязательного социального страхования, представляющих собой систему создаваемых государством правовых, экономических и организационных мер, направленных на обеспечение, при наступлении страхового случая, гарантий бесплатного оказания застрахованному лицу медицинской помощи за счет средств обязательного медицинского страхования в пределах территориальной программы ОМС и в случаях, установленных Федеральным законом, в пределах базовой программы ОМС. </p>
+                        </div>
+
+                        <a href="" id="2" class="content_fourth_right_anchor"></a>
+                        <div class="content_fourth_right_item shadow">
+                            <p class="content_fourth_right_item_number">2</p>
+                            <p class="content_fourth_right_item_title">Как финансируютс фодны ОМС</p>
+                            <p class="content_fourth_right_item_about">Для работающих слоев населения фонды ОМС финансируются за счет страховых отчислений, которые производят компании-работодатели. На сегодня эти отчисления составляют 3,6% от ЕСН (единого социального налога).</p>
+                            <p class="content_fourth_right_item_about">Для неработающих слоев населения фонды ОМС финансируются за счет отчислений из государственного бюджета. ОМС позволяет всем гражданам страны в равной степени получить медицинскую помощь, затраты на которую будут компенсированы не из личных средств гражданина, а из бюджетов систем ОМС. При этом перечень оказываемых медицинских услуг определяется в рамках территориальных программ обязательного медицинского страхования.</p>
+                        </div>
+
+                        <a href="" id="3" class="content_fourth_right_anchor"></a>
+                        <div class="content_fourth_right_item shadow">
+                            <p class="content_fourth_right_item_number">3</p>
+                            <p class="content_fourth_right_item_title">Территориальная программа ОМС?</p>
+                            <p class="content_fourth_right_item_about">Территориальная программа обязательного медицинского страхования – это отдельный документы, в котором закреплен объем бесплатной медицинской помощи, гарантированно предоставляемый населению. В программу, как правило, включены следующие виды медицинских услуг: Важно отметить, что существует ряд заболеваний и медицинских услуг, не покрывается за счет системы ОМС в рамках территориальных программ. Их финансирование должно происходить за счет местных бюджетов – федерального или городского.</p>
+                        </div>
+
+                        <a href="" id="4" class="content_fourth_right_anchor"></a>
+                        <div class="content_fourth_right_item shadow">
+                            <p class="content_fourth_right_item_number">4</p>
+                            <p class="content_fourth_right_item_title">Что не входит в территориальную программу ОМС?</p>
+                            <p class="content_fourth_right_item_about">ОМС - это вид обязательного социального страхования, представляющих собой систему создаваемых государством правовых, экономических и организационных мер, направленных на обеспечение, при наступлении страхового случая, гарантий бесплатного оказания застрахованному лицу медицинской помощи за счет средств обязательного медицинского страхования в пределах территориальной программы ОМС и в случаях, установленных Федеральным законом, в пределах базовой программы ОМС. </p>
+                        </div>
+
+                        <a href="" id="5" class="content_fourth_right_anchor"></a>
+                        <div class="content_fourth_right_item shadow">
+                            <p class="content_fourth_right_item_number">5</p>
+                            <p class="content_fourth_right_item_title">За что могут забрать деньги</p>
+                            <p class="content_fourth_right_item_about">Для работающих слоев населения фонды ОМС финансируются за счет страховых отчислений, которые производят компании-работодатели. На сегодня эти отчисления составляют 3,6% от ЕСН (единого социального налога). </p>
+                            <p class="content_fourth_right_item_about">Для неработающих слоев населения фонды ОМС финансируются за счет отчислений из государственного бюджета. ОМС позволяет всем гражданам страны в равной степени получить медицинскую помощь, затраты на которую будут компенсированы не из личных средств гражданина, а из бюджетов систем ОМС. При этом перечень оказываемых медицинских услуг определяется в рамках территориальных программ обязательного медицинского страхования.</p>
+                        </div>
+
+                        <a href="" id="6" class="content_fourth_right_anchor"></a>
+                        <div class="content_fourth_right_item shadow">
+                            <p class="content_fourth_right_item_number">6</p>
+                            <p class="content_fourth_right_item_title">Куда обращаться по вопросам ОМС?</p>
+                            <p class="content_fourth_right_item_about">Территориальная программа обязательного медицинского страхования – это отдельный документы, в котором закреплен объем бесплатной медицинской помощи, гарантированно предоставляемый населению. В программу, как правило, включены следующие виды медицинских услуг: Важно отметить, что существует ряд заболеваний и медицинских услуг, не покрывается за счет системы ОМС в рамках территориальных программ. Их финансирование должно происходить за счет местных бюджетов – федерального или городского.</p>
+                        </div>
+
+                        <a href="" id="7" class="content_fourth_right_anchor"></a>
+                        <div class="content_fourth_right_item shadow">
+                            <p class="content_fourth_right_item_number">7</p>
+                            <p class="content_fourth_right_item_title">Какие нужны документы для оформления ОМС</p>
+                            <p class="content_fourth_right_item_about">ОМС - это вид обязательного социального страхования, представляющих собой систему создаваемых государством правовых, экономических и организационных мер, направленных на обеспечение, при наступлении страхового случая, гарантий бесплатного оказания застрахованному лицу медицинской помощи за счет средств обязательного медицинского страхования в пределах территориальной программы ОМС и в случаях, установленных Федеральным законом, в пределах базовой программы ОМС. </p>
+                        </div>
+                    </section>
+                </div>
+                <!-- Социальные кнокпи -->
+                <div class="social_share shadow">
+                    <a href="" class="social_share_icon social_share_icon_twitter"></a>
+                    <a href="" class="social_share_icon social_share_icon_facebook"></a>
+                    <a href="" class="social_share_icon social_share_icon_vk"></a>
+                    <a href="" class="social_share_icon social_share_icon_google"></a>
+                </div>
+                <!-- Серые блоки -->
+                <section class="content_third_threeBlocks content_third_threeBlocks_fourth clearfix">
+                    <div class="content-row_gray">
+                        <a href="">
+                            <div class="content-row_gray_img">
+                                <img src="img/hummer.svg" alt="" height="137" class="src">
+                            </div>
+                            <p class="content-row_gray_title">
+                                СК «ТРАНСНЕФТЬ» вышла из НССО
+                            </p>
+                        </a>
+                        <div class="info-block">
+                            <a href="" class="category" id="category">Имущество</a>
+                            <span class="date" id="date">15.12.2016</span>
+                            <span class="views" id="views"><img src="img/eye2.png">416</span>
+                        </div>
+                    </div>
+                    <div class="content-row_gray">
+                        <a href="">
+                            <div class="content-row_gray_img">
+                                <img src="img/money.svg" alt="" height="137" class="src">
+                            </div>
+                            <p class="content-row_gray_title">
+                                СК «ТРАНСНЕФТЬ» вышла из НССО
+                            </p>
+                        </a>
+                        <div class="info-block">
+                            <a href="" class="category" id="category">Имущество</a>
+                            <span class="date" id="date">15.12.2016</span>
+                            <span class="views" id="views"><img src="img/eye2.png">416</span>
+                        </div>
+                    </div>
+                    <div class="content-row_gray">
+                        <a href="">
+                            <div class="content-row_gray_img">
+                                <img src="img/building.svg" alt="" height="137" class="src">
+                            </div>
+                            <p class="content-row_gray_title">
+                                СК «ТРАНСНЕФТЬ» вышла из НССО
+                            </p>
+                        </a>
+                        <div class="info-block">
+                            <a href="" class="category" id="category">Имущество</a>
+                            <span class="date" id="date">15.12.2016</span>
+                            <span class="views" id="views"><img src="img/eye2.png">416</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="content_sec_bottom mobile-hidden clearfix clearfixup">
+                    <div class="clear_content_right_news-tile content_right_news-tile">
+                        <a href="">
+                            <div class="content_right_news-tile_pict content_right_news-tile_pict_jpg">
+                                <img src="img/alpha.jpg" alt="">
+                            </div>
+                            <div class="content_right_news-tile_title">
+                                <p>СК «ТРАНСНЕФТЬ» вышла из НССО
+                                <p>
+                            </div>
+                        </a>
+                        <div class="content_right_news-tile_text">
+                            <p>В апреле портал 711 рассказывал о новой инициативе Российского союза автостраховщиков. Суть инициативы сводилась к тому, ...</p>
+                        </div>
+                        <a href="" class="category" id="category">Имущество</a>
+                        <span class="date" id="date">15.12.2016</span>
+                        <span class="views" id="views"><img src="img/eye1.svg" />416</span>
+                    </div>
+                    <div class="clear_content_right_news-tile content_right_news-tile">
+                        <a href="">
+                            <div class="content_right_news-tile_pict content_right_news-tile_pict_svg">
+                                <img src="img/backpack.svg" alt="" width="120">
+                            </div>
+                            <div class="content_right_news-tile_title">
+                                <p>СК «ТРАНСНЕФТЬ» вышла из НССО
+                                <p>
+                            </div>
+                        </a>
+                        <div class="content_right_news-tile_text">
+                            <p>В апреле портал 711 рассказывал о новой инициативе Российского союза автостраховщиков. Суть инициативы сводилась к тому, ...</p>
+                        </div>
+                        <a href="" class="category" id="category">Имущество</a>
+                        <span class="date" id="date">15.12.2016</span>
+                        <span class="views" id="views"><img src="img/eye1.svg" />416</span>
+                    </div>
+                    <div class="clear_content_right_news-tile content_right_news-tile">
+                        <a href="">
+                            <div class="content_right_news-tile_pict content_right_news-tile_pict_jpg">
+                                <img src="img/photos2.jpg" alt="">
+                            </div>
+                            <div class="content_right_news-tile_title">
+                                <p>СК «ТРАНСНЕФТЬ» вышла из НССО
+                                <p>
+                            </div>
+                        </a>
+                        <div class="content_right_news-tile_text">
+                            <p>В апреле портал 711 рассказывал о новой инициативе Российского союза автостраховщиков. Суть инициативы сводилась к тому, ...</p>
+                        </div>
+                        <a href="" class="category" id="category">Имущество</a>
+                        <span class="date" id="date">15.12.2016</span>
+                        <span class="views" id="views"><img src="img/eye1.svg" />416</span>
+                    </div>
+                    <div class="clear_content_right_news-tile content_right_news-tile">
+                        <a href="">
+                            <div class="content_right_news-tile_pict content_right_news-tile_pict_svg">
+                                <img src="img/backpack.svg" alt="" width="120">
+                            </div>
+                            <div class="content_right_news-tile_title">
+                                <p>СК «ТРАНСНЕФТЬ» вышла из НССО
+                                <p>
+                            </div>
+                        </a>
+                        <div class="content_right_news-tile_text">
+                            <p>В апреле портал 711 рассказывал о новой инициативе Российского союза автостраховщиков. Суть инициативы сводилась к тому, ...</p>
+                        </div>
+                        <a href="" class="category" id="category">Имущество</a>
+                        <span class="date" id="date">15.12.2016</span>
+                        <span class="views" id="views"><img src="img/eye1.svg" />416</span>
+                    </div>
+                </section>
+                </section>
+            </main>
+            <!-- Подписаться  -->
+            <div class="subscribe">
+                <div class="subscribe_container">
+                    <p class="subscribe_container_title">Новые статьи на почту:</p>
+                    <form action="" method="post">
+                        <input type="email" placeholder="Ваш e-mail">
+                        <button class="" type="submit">Подписаться</button>
+                </div>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="email-sending"><div class="email-sending-wrapper"><p class="email-sending-title">Новые статьи на почту:</p><form class="email-sending-form"><input type="text" class="email-sending-input" placeholder="Ваш e-mail"><button class="basic-green">Подписаться</button></form></div></div> /email-sending -->
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="main-footer--wrapper">
+                <div class="footer-block">
+                    <h3 class="item-title">Быстрые переходы</h3>
+                    <div class='main_footer_item_title_arrow'></div>
+                    <ul class="menu-footer">
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Главная</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Новости</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Отзывы</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">О портале</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Партнёры</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /footer-block -->
+                <div class="footer-block">
+                    <h3 class="item-title">Cтраховые компании</h3>
+                    <div class='main_footer_item_title_arrow'></div>
+                    <ul class="menu-footer">
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Рейтинг компаний</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Отзывы о страховых</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Полный каталог правил страхования</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Список филиалов страховых компаний</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Карта адресов</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Калькулятор каско</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /footer-block -->
+                <div class="footer-block">
+                    <h3 class="item-title">Виды страхования</h3>
+                    <div class='main_footer_item_title_arrow'></div>
+                    <ul class="menu-footer">
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">КАСКО</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">ОСАГО</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Зеленая карта</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Страхование квартиры</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Страхование дома</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Ответственность граждан</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Выезжаещие за рубеж</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Путешествующие по РФ</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Страхование багажа</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Несчастный случай</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">ДМС</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">ОМС</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Страхование жизни</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Ипотечное страхование</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Титульное страхование</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /footer-block -->
+                <div class="footer-block">
+                    <h3 class="item-title">Новости</h3>
+                    <div class='main_footer_item_title_arrow'></div>
+                    <ul class="menu-footer">
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Новости компаний</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">СМИ о страховании</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Есть мнение</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Наш эксклюзив</a>
+                        </li>
+                        <li class="item-link">
+                            <a class="item-link-ref" href="/">Статьи</a>
+                        </li>
+                    </ul>
+                    <div class="footer-block footer-block--social">
+                        <h3 class="item-title item-title--margin">Мы в соц.сетях</h3>
+                        <div class="social-icons">
+                            <a class="social-icons-link" href="/">
+                                <svg version="1.1" class="facebook-ico"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 10.2 18.8" enable-background="new 0 0 10.2 18.8" xml:space="preserve">
+                                    <g id="Layer_1" display="none">
+                                        <g id="Menu" display="inline"></g>
+                                    </g>
+                                    <g id="Layer_3">
+                                        <g>
+                                            <path class="fill" d="M10.2,10.2V6.4H6.4V4.8c0-0.6,0.4-1,0.7-1h3.1V0H7.1C4.7,0,2.8,2.3,2.8,4.9v1.5H0v3.8h2.8v8.7h3.6v-8.7H10.2z"/>
+                                        </g>
+                                        <g id="Menu_1_"></g>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a class="social-icons-link" href="/">
+                                <svg version="1.1" class="vk-ico"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 21.4 12.2" enable-background="new 0 0 21.4 12.2" xml:space="preserve">
+                                    <g id="Layer_1" display="none">
+                                        <g id="Menu" display="inline"></g>
+                                    </g>
+                                    <g id="Layer_3">
+                                        <path class="fill" d="M10.5,12.1h1.3c0,0,0.4,0,0.6-0.3c0.2-0.2,0.2-0.6,0.2-0.6s0-1.7,0.8-2c0.8-0.2,1.8,1.7,2.9,2.4c0.8,0.6,1.4,0.4,1.4,0.4l2.9,0c0,0,1.5-0.1,0.8-1.3c-0.1-0.1-0.4-0.9-2.1-2.5c-1.8-1.7-1.6-1.4,0.6-4.3c1.3-1.8,1.8-2.8,1.7-3.3c-0.2-0.4-1.1-0.3-1.1-0.3l-3.2,0c0,0-0.2,0-0.4,0.1C16.4,0.8,16.3,1,16.3,1s-0.5,1.4-1.2,2.5c-1.4,2.4-2,2.6-2.2,2.4c-0.5-0.4-0.4-1.4-0.4-2.2c0-2.4,0.4-3.3-0.7-3.6C11.4,0.1,11.2,0,10.3,0C9.1,0,8.2,0,7.6,0.3C7.2,0.5,7,0.9,7.1,0.9c0.2,0,0.7,0.1,0.9,0.5c0.3,0.4,0.3,1.5,0.3,1.5S8.6,5.6,8,5.9c-0.4,0.2-1-0.2-2.3-2.5C5,2.3,4.5,1.1,4.5,1.1S4.4,0.9,4.2,0.7C4,0.6,3.8,0.5,3.8,0.5l-3.1,0c0,0-0.5,0-0.6,0.2c-0.1,0.2,0,0.5,0,0.5s2.4,5.6,5.1,8.4C7.6,12.3,10.5,12.1,10.5,12.1L10.5,12.1z"/>
+                                        <g id="Menu_1_"></g>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a class="social-icons-link" href="/">
+                                <svg version="1.1" class="instagram-ico"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17.8 17.8" enable-background="new 0 0 17.8 17.8" xml:space="preserve">
+                                <g id="Layer_1" display="none">
+                                    <g id="Menu" display="inline"></g>
+                                </g>
+                                <g id="Layer_3">
+                                    <g>
+                                        <path class="fill" d="M13.5,8.9c0,2.5-2,4.6-4.6,4.6c-2.5,0-4.6-2.1-4.6-4.6c0-2.5,2.1-4.6,4.6-4.6C11.4,4.3,13.5,6.4,13.5,8.9zM5.9,8.9c0,1.6,1.3,3,2.9,3c1.7,0,3-1.3,3-2.9c0-1.7-1.3-3-3-3C7.3,5.9,5.9,7.3,5.9,8.9z"/>
+                                        <g>
+                                            <path class="fill" d="M0,11.9c0-2,0-3.9,0-5.9c0-0.1,0-0.1,0-0.2c0-0.7,0.1-1.4,0.2-2C0.6,2.2,1.5,1.1,3,0.5C3.7,0.2,4.6,0.1,5.4,0C5.6,0,5.8,0,6,0c2,0,3.9,0,5.9,0C11.9,0,12,0,12,0c0.6,0,1.1,0,1.7,0.2c2,0.4,3.3,1.6,3.9,3.6c0.2,0.9,0.2,1.8,0.2,2.7c0,1.7,0,3.5,0,5.2c0,0.7,0,1.4-0.2,2c-0.4,2-1.6,3.3-3.6,3.8c-0.9,0.2-1.8,0.2-2.7,0.2c-1.9,0-3.7,0-5.6,0c-0.7,0-1.4,0-2.1-0.2c-1.5-0.4-2.6-1.2-3.2-2.7c-0.4-0.8-0.5-1.7-0.5-2.5C0,12.2,0,12,0,11.9z M16.2,8.9C16.2,8.9,16.2,8.9,16.2,8.9c0-0.7,0-1.5,0-2.2c0-0.7,0-1.4-0.1-2.1c-0.1-0.7-0.3-1.3-0.8-1.8c-0.6-0.7-1.5-1-2.4-1.1c-1.1-0.1-2.1-0.1-3.2-0.1c-1,0-2.1,0-3.1,0c-0.7,0-1.4,0-2.1,0.1C3.9,1.8,3.3,2,2.8,2.5C1.9,3.3,1.5,4.2,1.7,4.9C1.9,5.9,1.6,7,1.6,8c0,1,0,2.1,0,3.1c0,0.7,0,1.4,0.1,2.1c0.1,0.7,0.3,1.3,0.8,1.8c0.6,0.7,1.5,1,2.4,1.1C5.9,16.2,7,16.2,8,16.2c1,0,2.1,0,3.1,0c0.8,0,1.5,0,2.3-0.2c1.3-0.2,2.2-1,2.5-2.2c0.1-0.4,0.2-0.9,0.2-1.3C16.2,11.3,16.2,10.1,16.2,8.9z"/>
+                                            <g>
+                                                <path class="fill" d="M14.7,4.2c0,0.6-0.5,1.1-1.1,1.1c-0.6,0-1.1-0.5-1.1-1.1c0-0.6,0.5-1.1,1.1-1.1C14.3,3.1,14.7,3.6,14.7,4.2z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g id="Menu_1_"></g>
+                                </g>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /footer-block -->
+                <div class="footer-block footer-block--social footer-block--copyrights">
+                    <p class="copyrights">
+                        &copy; 2015, ООО "711".
+                        <a href="/">info@711.ru</a> . +7 (495) 778-77-11
+                    </p>
+                </div>
+            </div>
+            <!-- /main-footer--wrapper-->
+        </footer>
+        <!-- /main-footer-->
+        </div>
+        <!-- /global-wrapper-->
+        <script src="js/index.js"></script>
+        <script src="js/resize.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("#content_fourth_right_list").on("click","a", function (event) {
+                   //отменяем стандартную обработку нажатия по ссылке
+                   event.preventDefault();
+                   //забираем идентификатор бока с атрибута href
+                   var id  = $(this).attr('href'),
+                   //узнаем высоту от начала страницы до блока на который ссылается якорь
+                       top = $(id).offset().top;
+                   //анимируем переход на расстояние - top за 1500 мс
+                   $('body,html').animate({scrollTop: top}, 1500);
+               });
+            })
+        </script>
+        <script type="text/javascript">
+        window.onscroll = function() {
+            var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+            var myWidth = document.documentElement.clientWidth;
+            var companiesList_letterList = document.querySelector('#content_fourth_right_list');
+            console.log(scrolled);
+            if(scrolled < 600){
+                companiesList_letterList.classList.remove('content_fourth_right_list_fixed');
+                companiesList_letterList.classList.remove('content_fourth_right_list_absolute');
+            }
+            else if(scrolled > 600 && scrolled < 2800){
+                companiesList_letterList.classList.add('content_fourth_right_list_fixed');
+                companiesList_letterList.classList.remove('content_fourth_right_list_absolute');
+            }
+            else if(scrolled > 2800){
+                companiesList_letterList.classList.remove('content_fourth_right_list_fixed');
+                companiesList_letterList.classList.add('content_fourth_right_list_absolute');
+            }
+        }
+        </script>
+    </body>
+</html>

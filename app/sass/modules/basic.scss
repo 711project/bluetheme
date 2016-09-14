@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.global-wrapper {
+  background: #eaedef;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+// Блок с отправкой и подпиской по email
+
+.email-sending {
+  background-color: #4472d4;
+
+  &-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 123px;
+  }
+
+  &-title {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.625em;
+    float: left;
+    margin: 0 0 0 20px;
+  }
+
+  &-form {
+
+  }
+
+  &-input {
+    max-width: 300px;
+    height: 40px;
+    width: 100%;
+    display: inline-block;
+  }
+}
+.clearfixup::before{
+    content:'';
+    display: block;
+    clear: both;
+}
+.mobile-show{
+    display: none;
+    @include adaptive(mobile){
+        display: block;
+    }
+}
+.mobile-hidden{
+    @include adaptive(mobile){
+        display: none;
+    }
+}
+.pad-hidden{
+    @include adaptive(pad){
+        display: none;
+    }
+    @include adaptive(mobile){
+        display: none;
+    }
+}
+.desc-hiden{
+    @include adaptive(desktop){
+        display: none;
+    }
+}
+.content-row_gray_img{
+    img{
+        @include adaptive(mobile){
+            height: 110px;
+        }
+    }
+
+}
+#backlayer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+    display: none;
+}
